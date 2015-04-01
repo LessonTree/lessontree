@@ -18,7 +18,7 @@ class User < ActiveRecord::Base
   validates_with AttachmentSizeValidator, :attributes => :avatar,
       :less_than => 3.megabytes
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
-  validates_presence_of :name
+  # validates_presence_of :name
 
   def to_s
     name
