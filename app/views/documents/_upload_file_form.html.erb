@@ -6,7 +6,7 @@
   </ul>
 <% end %>
 
-<div>
+<div class="modal-upload-document-container">
   <%= form_for(@document, multipart: true, url: create_from_upload_documents_path, :html => {target: '_parent'}) do |f| %>
     <div>
       <%= f.label :title %>
