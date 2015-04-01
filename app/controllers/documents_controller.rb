@@ -1,6 +1,6 @@
 class DocumentsController < ApplicationController
   before_action :set_document, only: [:edit, :show, :update,
-        :destroy, :version_history]
+        :destroy, :version_history, :document_frame]
   before_action :set_lesson, only: [:show, :destroy]
   before_action :authenticate_user!, only: [:create, :new, :create_from_upload, :edit, :update, :destroy]
   attr_accessor :title, :description
@@ -23,6 +23,10 @@ class DocumentsController < ApplicationController
     else
       render action: "new"
     end
+  end
+
+  def document_frame
+    render layout: false
   end
 
   def create_from_upload

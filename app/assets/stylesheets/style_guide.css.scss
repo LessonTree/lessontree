@@ -55,7 +55,8 @@ $green-hover-color: #6fbaab;
   display: inline;
   float: left;
   font-size: 3em;
-  font-family: $cursive-font;
+  // font-family: "REIS-Regular";
+  font-family: "whatever it takes bold";
   // padding: 0.2em 0 0 2.5em;
   padding: 0.2em 0 0 1.5em;
 
@@ -245,15 +246,20 @@ list-style: none;
          HERO HOMEPAGE
 ************************************/
 .main-container-hero {
-  background-color: $top-bg-color;
   color: white;
+  background-image: url("http://test.nextstepscholars.com/wp-content/uploads/2014/06/apple-Chalkboard.jpg");
+  background-size: 100%;
+  // background-attachment: fixed;
   margin-left: 0px;
   padding-bottom: 6em;
+  overflow: hidden;
+  height: 1164px 523px;
 }
 
 h1 {
-  font-family: $headline-font;
-  font-size: 5.3em;
+  font-family: "whatever it takes bold";
+  // font-family: 'REIS-Regular';
+  font-size: 4em;
   text-align: center;
   text-shadow: -1px -1px $alt-gray-color;
   line-height: 1.2em;
@@ -262,10 +268,12 @@ h1 {
 }
 
 .key-words {
-  font-family: $headline-font, sans-serif;
+  font-family: $headline-font;
   text-align: center;
   text-shadow: -1px -1px $alt-gray-color;
-  font-size: 45px;
+  font-size: 1.25em;
+  position: relative;
+  right: 13px;
 }
 
 /************************************
@@ -316,9 +324,9 @@ h1 {
   font-weight: bolder;
   font-family: $headline-font;
   letter-spacing: .1em;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   border: none;
-  background: $alt-top-bg-color;
+  background: $alt-top-bg-hover;
   color: #fff;
   border-top-right-radius: .25em;
   border-bottom-right-radius: .25em;
@@ -417,6 +425,7 @@ SELECT DROPDOWN BUTTON
     &:before {
       font-size: $expander-arrow-width;
       content: "\25BA";
+
     }
   }
 
@@ -437,7 +446,7 @@ SELECT DROPDOWN BUTTON
 
 .select-menu {
   display: block;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   background: $alt-top-bg-color;
   color: #fff;
   font-family: $headline-font;
@@ -3114,7 +3123,7 @@ footer {
 .footer-head {
   text-align: center;
   font-size: 4em;
-  font-family: $cursive-font;
+  font-family: "whatever it takes bold";
   margin: 1em 0 1em;
   color: #fff;
   padding: 0;
@@ -3249,4 +3258,12 @@ footer {
 .pg-number-counter {
   font-size: 1.1em;
   text-align: right;
+}
+
+.expander {
+  font-size: 1.05em;
+  overflow: hidden;
+  a {
+    color: white;
+  }
 }

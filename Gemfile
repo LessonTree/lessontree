@@ -28,6 +28,7 @@ gem 'paper_trail', '~> 4.0.0.beta'
 gem 'diffy'
 gem 'commontator', '~> 4.10.0'
 gem 'kaminari'
+gem 'font_assets'
 
 group :development, :test do
   gem 'byebug'
